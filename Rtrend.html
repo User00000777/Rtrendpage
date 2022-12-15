@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>R Trend</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fotawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+     <div class="content">
+       <div class="logo"><a href="#">R Trend</a></div>
+         <ul class="menu-list">
+           <div class="icon cancel-btn">
+             <i class="fas fa-times"></i>
+           </div>
+           <li><a href="#">Home</a></li>
+           <li><a href="#">Lo Nuevo</a></li>
+           <li><a href="#">Camisetas</a></li>
+       </ul>
+       <div class="icon menu-btn">
+         <i class="fas fa-bars"></i>
+       </div>
+      </div>
+    </nav>
+    
+    
+      <div class="banner"></div)>
+      <div class="about">
+       <div class="content">
+      <div class="title">¿Quiénes Somos?</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae rutrum tortor. Nunc rhoncus nisl neque, eu molestie lacus pharetra tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla viverra risus ac felis rutrum dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis porttitor id risus non placerat. Mauris diam risus, pretium nec odio sed, commodo malesuada felis. Integer fermentum felis at nisi molestie, lacinia hendrerit sem varius. Etiam eu tempus lorem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae rutrum tortor. Nunc rhoncus nisl neque, eu molestie lacus pharetra tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla viverra risus ac felis rutrum dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis porttitor id risus non placerat. Mauris diam risus, pretium nec odio sed, commodo malesuada felis. Integer fermentum felis at nisi molestie, lacinia hendrerit sem varius. Etiam eu tempus lorem.</p>
+       </div>
+    <script>
+      const body = document.querySelector(".body");
+      const menu = document.querySelector(".menu-list");
+      const menuBtn = document.queySelector(".menu-bnt");
+      const cancelBtn = document.querySelector(".cancel-btn");
+      menuBtn.onclick = ()=>{
+        menu.classlist.add("active");
+        menuBtn.classlist.add("hide");
+        body.classlist.add("disabledScroll")
+      }
+      menuBtn.onclick = ()=>{
+        menu.classlist.remove("active");
+        menuBtn.classlist.remove("hide");
+        body.classlist.remove("disabledScroll")
+      }
+      
+      window.onscroll = ()=>{
+        this.scrollY > 20 ? navbar.classlist.add("sticky") : navbar.classlist.remove("sticky");
+      }
+    </script>
+        
+  </body>
+</html>
